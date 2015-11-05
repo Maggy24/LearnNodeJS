@@ -1,0 +1,10 @@
+node module -- var hello = require('./hello');  this is a module that we are exporting (another js file) in our file same like import java.io package; 
+Here './' represents the current directory (no need to mention .js extenstion to filename). else it will point globaly.
+
+core module -- inbuild module eg.- var hello = require('http');
+non core module -- third party eg.-- var hello = require('mysql');
+non core module -- moving through each parent directory in turn, checking in each to see if there is a folder called 'node_modules'. If such a folder is found, node.js will look into this folder for a file called 'mysql.js'. If no matching file is found and the directory root '/' is reached, node.js will give up and throw an exception.
+
+$ node debug my_file.js for debugging purpose
+
+when something will get error at time of node command -- it will create npm-debug.log file to that directery regarding to that error

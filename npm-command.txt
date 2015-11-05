@@ -1,0 +1,39 @@
+npm list -g --depth=0    -- to get list & vesion number of packages that has been installed in npm
+npm ls
+npm -- package manager for JavaScript with node.js
+npm update [-g] [<pkg>...]  -- to  upadate particulare package.
+npm init -- to create package.js
+npm install (with no args, in package dir)  -- to  install the package.
+npm install express -g OR  npm install -g express   -- to install globally
+npm install --save express -- to install locally in our project
+
+export is a object to bind all method & variable & send it using return statement to access from another file
+export.getInfo = function(){
+  return data;                //data will return
+};
+
+
+if globall installed package  you can --
+express airline (Here airline foldername)
+npm install   -- to install in all dependency for express (it will update package.json)
+npm prune --  to remove package dependencis
+npm update -- to update package dependency with latest version
+
+install http-server package -- 
+-- http-server (To start server http://0.0.0.0:8080 with default domain name & port number)
+-- http-server -p 8090 -a localhost -o (To change port and address & open in browser)
+
+OR 
+install httpserver package --  npm install -g httpserver
+httpserver (To start server http://0.0.0.0:8080 with default domain name & port number)
+httpserver 80 localhost (To change port and address)
+
+linux command --
+curl command to get host files data
+curl http://localhost/
+curl http://182.50.155.50 --- getting response data from server
+ab -n 100 -c 100 http://127.0.0.1/  -- command to make -n number of request  -c concurrency to localhost & show details
+telnet localhost 80
+
+
+
